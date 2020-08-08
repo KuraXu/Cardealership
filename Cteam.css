@@ -1,0 +1,234 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+body {
+font-family: 'Roboto', sans-serif;
+background: url(Photos/Mclaren/pic1.jpg) no-repeat no-repeat center center fixed;
+background-size: cover;
+}
+
+.navbar{
+	font-size: 35px;
+	color: white;
+	float: inherit;
+	display: inline-block;
+}
+
+.navbarlogo{
+	font: 400 50px/1.3 'Arizonia', Helvetica, sans-serif;
+  color: white;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+	line-height: 1em;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 42px;
+}
+
+.card-body
+{
+border-radius: 5px;
+padding: 20px;
+margin: 3px;
+border: 3px;
+}
+
+.card-info{
+	background-color: gray;
+  opacity: .7;
+	float: none;
+	padding: 10px;
+	margin: 3px;
+	border: 3px;
+	width: auto;
+	height: auto;
+	margin-bottom: 10px;
+	margin: 0 auto;
+
+}
+
+.card-title{
+		color: white;
+}
+
+
+.card-text{
+	color: white;
+}
+
+.wrapper{
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+	color: white;
+	float:none;
+}
+
+.card-row{
+	background-color: rgba(245, 245, 245, 1);
+  opacity: .0;
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 10px;
+}
+
+.cash{
+	color: white;
+	font-size: 17px;
+	margin: 100px;
+	padding: 10px;
+	float: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.cash1{
+	color: white;
+	font-size: 17px;
+	margin: 20px;
+	float: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.cashimg{
+	margin-bottom: 0px;
+	margin-top: 20px;
+	height: 100px;
+	width: 100px;
+}
+
+.container-fluid{
+	background-color: gray;
+  opacity: .8;
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	height: auto;
+}
+
+.card-body-time{
+	background-color: gray;
+	opacity: .7;
+	float: none;
+	padding: 20px;
+	margin: 3px;
+	border: 3px;
+	width: auto;
+	height: auto;
+}
+
+.card-contact{
+	background-color: gray;
+  opacity: .7;
+	float: none;
+	padding: 10px;
+	margin: 3px;
+	border: 3px;
+	width: auto;
+	height: auto;
+	margin-bottom: 10px;
+	margin: 0 auto;
+}
+
+.col-sm-sale{
+	background-color: gray;
+	opacity: .7;
+	padding: 10px;
+	margin: 3px;
+	border: 3px;
+	margin-right:200px;
+	margin-left: 200px;
+	font-size: 20px;
+	color: white;
+}
+
+.col-sm-rent{
+	background-color: gray;
+	opacity: .7;
+	padding: 10px;
+	margin: 3px;
+	border: 3px;
+	font-size: 20px;
+	color: white;
+}
+
+.container{
+	background-color: gray;
+  opacity: .8;
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	height: auto;
+
+}
+
+.divCSS
+{
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+}
+
+.imgCSS
+{
+	width: 100%;
+	height: auto;
+}
+
+.captionCSS
+{
+	/* text-align: center;
+	color: Pink; */
+	color: black;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	line-height: 58px;
+	margin: 0 0 5px;
+ text-align: center;
+ padding-bottom: 40px
+}
+
+.containMe
+{
+	display: grid;
+	grid-gap: 5px;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+}
+
+.box
+{
+	background-color: white;
+	border-radius: 2px;
+	padding: 20px;
+	margin: 3px;
+	border: 2px solid black;
+}
+
+.btn-outline-info
+{
+	/* background-color: #008CBA; */
+	color: blue;
+	float: none;
+	border-radius: 8px;
+}
+
+.btn-outline-danger
+{
+	/* background-color: #f44336; */
+	color: red;
+	float: none;
+	border-radius: 8px;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+
+}

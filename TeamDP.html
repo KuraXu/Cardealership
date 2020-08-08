@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detailed page</title>
+  <link rel="stylesheet" href="Team.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<body id = "backColorDp">
+  <div id="effectDiv" class="imgDiv">
+    <button id="u" type ="button" class="btn btn-secondary">back</button>
+  </div>
+<div class="container-fluid">
+  <script>
+  $( function() {
+        $("#u").click(function(){
+        var h = "Porsche.html";
+        console.log(h);
+        window.location.href = h;
+    });
+    var url = window.location.href;
+    console.log("url = " + url);
+    var x = breakUpURLParameters(url);
+      	console.log(x.search);
+      	console.log("img url  = " + x.search.img);
+
+    var t = document.getElementById("effectDiv");
+
+    var y = document.createElement("img");
+	var h1 = document.createElement("h1");
+	var p = document.createElement("p");
+	var h2 = document.createElement("h2");
+  var pDiv = document.createElement("div");
+
+    pDiv.setAttribute("id", "heart");
+    y.setAttribute("src", x.search.img);
+    y.setAttribute("class", "divCSS");
+
+   var captionNode = document.createTextNode(decodeURI(x.search.caption));
+	var descNode = document.createTextNode(decodeURI(x.search.desc));
+	var titleNode = document.createTextNode(decodeURI("Description: "));
+
+	h1.appendChild(captionNode);
+	p.appendChild(descNode);
+	h2.appendChild(titleNode);
+
+  t.appendChild(h1);
+  t.appendChild(pDiv);
+	t.appendChild(y);
+	t.appendChild(h2);
+	t.appendChild(p);
+
+  if (document.cookie.split(';').filter(function(item){return item.indexOf('imgFile=1.jpg') >= 0}).length)
+			{
+				var heart = document.createElement("i");
+				heart.setAttribute("class", "fa fa-thumbs-up");
+				heart.setAttribute("style","font-size:50px;color:#00e699;");
+				var heartDiv = document.getElementById("heart");
+				heartDiv.appendChild(heart);
+			}
+
+	else if (document.cookie.split(';').filter(function(item){return item.indexOf('imgFile=2.jpg') >= 0}).length)
+			{
+				var heart = document.createElement("i");
+				heart.setAttribute("class", "fa fa-thumbs-up");
+				heart.setAttribute("style","font-size:50px;color:#00e699;");
+				var heartDiv = document.getElementById("heart");
+				heartDiv.appendChild(heart);
+			}
+
+	else if (document.cookie.split(';').filter(function(item){return item.indexOf('imgFile=3.jpg') >= 0}).length)
+			{
+				var heart = document.createElement("i");
+				heart.setAttribute("class", "fa fa-thumbs-up");
+				heart.setAttribute("style","font-size:50px;color:#00e699;");
+				var heartDiv = document.getElementById("heart");
+				heartDiv.appendChild(heart);
+			}
+
+	else if (document.cookie.split(';').filter(function(item){return item.indexOf('imgFile=4.jpg') >= 0}).length)
+			{
+				var heart = document.createElement("i");
+				heart.setAttribute("class", "fa fa-thumbs-up");
+				heart.setAttribute("style","font-size:50px;color:#00e699;");
+				var heartDiv = document.getElementById("heart");
+				heartDiv.appendChild(heart);
+			}
+
+	else if (document.cookie.split(';').filter(function(item){return item.indexOf('imgFile=5.jpg') >= 0}).length)
+			{
+				var heart = document.createElement("i");
+				heart.setAttribute("class", "fa fa-thumbs-up");
+				heart.setAttribute("style","font-size:50px;color:#00e699;");
+				var heartDiv = document.getElementById("heart");
+				heartDiv.appendChild(heart);
+			}
+      else if (document.cookie.split(';').filter(function(item){return item.indexOf('imgFile=6.jpg') >= 0}).length)
+    			{
+    				var heart = document.createElement("i");
+    				heart.setAttribute("class", "fa fa-thumbs-up");
+    				heart.setAttribute("style","font-size:50px;color:#00e699;");
+    				var heartDiv = document.getElementById("heart");
+    				heartDiv.appendChild(heart);
+    			}
+
+
+    function breakUpURLParameters(url) {
+        var link = document.createElement('a');
+        link.setAttribute('href', url);
+        console.log("path variable is " + url);
+
+
+        return {
+            host:     link.hostname,
+            port:     link.port,
+            search:   mapMaker(link.search),
+            path:     link.pathname,
+            protocol: link.protocol
+        }
+    }
+
+  function mapMaker(search, preserveDuplicates) {
+      preserveDuplicates = preserveDuplicates || false;
+
+      var outputNoDupes = {};
+      var returnableArray = [];
+
+      if(!search) throw new Error('mapMaker: your search input param is misformed?');
+      search = search.split('?')[1];
+      search = search.split('&');
+      returnableArray = search.map(function(keyval){
+                                   var out = {};
+                                   keyval = keyval.split('=');
+                                   out[keyval[0]] = keyval[1];
+                                   outputNoDupes[keyval[0]] = keyval[1];
+                                   return out;
+                                   });
+                                   return (preserveDuplicates) ? returnableArray : outputNoDupes;
+  }
+});
+</script>
+</head>
+<body>
+  <div id="effectDiv" class="imgDiv">
+  </div>
+</body>
+
+<button type="button" class="btn" value ="login" id= "submit" onclick="validate2()"/> Buy Now!</button>
+<script>
+function validate2(){
+ alert ("Car Purchased!");
+
+}
+</script>
+</html>
