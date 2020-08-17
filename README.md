@@ -1,3 +1,0 @@
-# Cardealership
-
-HomePage is TeamDP
